@@ -78,7 +78,7 @@ params:
   description: My Portfolio Site
   
   # staticPath: ""  # The path to serve the static files from
-  favicon: "https://moustascheman.github.io/MyPortfolio/favicon.png"
+  favicon: "favicon.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -153,14 +153,14 @@ params:
     title: "Rahman."
     subtitle: "I build software and analyze data"
     content: "From applications to video games to websites, I enjoy building things and learning new technologies."
-    image: "https://moustascheman.github.io/MyPortfolio//images/myImage.jpg"
+    image: "images/myImage.jpg"
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "Resume"
-      url: "https://moustascheman.github.io/MyPortfolio/Resume.pdf"
+      url: "Resume.pdf"
       download: true
       newPage: false
     socialLinks:
@@ -178,7 +178,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "https://moustascheman.github.io/MyPortfolio/images/aboutme.jpg"
+    image: "images/aboutme.jpg"
     content: |-
       I am a software developer with a passion for building things including fullstack applications and video games.
 
@@ -254,7 +254,7 @@ params:
           - ".NET"
           - "C#"
           - "PostgreSQL"
-        image: "https://moustascheman.github.io/MyPortfolio/images/projects/chatappstockimage.jpg"
+        image: "images/projects/chatappstockimage.jpg"
         links:
           - icon: fab fa-github
             url: https://github.com/moustascheman/ChatAppBackend
@@ -264,7 +264,7 @@ params:
         badges:
           - "C#"
           - "Unity"
-        image: "https://moustascheman.github.io/MyPortfolio/images/projects/dialogueeditor.jpg"
+        image: "images/projects/dialogueeditor.jpg"
         featured:
           name: Live Demo
           link: https://moustascheman.itch.io/dialogue-system-demo
@@ -274,7 +274,7 @@ params:
 
       - title: Knightmare
         content: "A 2D Platformer built with the Unity Game Engine"
-        image: "https://moustascheman.github.io/MyPortfolio/images/projects/knightmare.png"
+        image: "images/projects/knightmare.png"
         badges:
           - "C#"
           - "Unity"
