@@ -7,7 +7,7 @@ tags:
   - Skills
   - About me
 description: "A brief summary of my skills and proficiencies"
-image: "/images/skillspost.jpg"
+image: "https://moustascheman.github.io/MyPortfolio/images/skillspost.jpg"
 date: 2026-10-16T10:00:00+00:00
 ---
 
