@@ -1,0 +1,332 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Rahman Ahmed"
+theme: hugo-profile
+
+# Multilingual configuration
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content"
+    menu:
+      main:
+        - identifier: blog
+          name: Blog
+          title: Rahman Ahmed
+          url: /blogs
+          weight: 1
+          
+
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  #main:
+   # - identifier: gallery
+    #  name: Gallery
+    #  title: Gallery
+    #  url: /gallery
+    #  weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  
+  title: "Rahman's Portfolio"
+  description: My Portfolio Site
+  
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/favicon.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+     disableThemeToggle: true
+     defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#343a40"
+    secondaryTextColor: "#6c757d"
+    textLinkColor: "#007bff"
+    backgroundColor: "#eaedf0"
+    secondaryBackgroundColor: "#64ffda1a"
+    primaryColor: "#007bff"
+    secondaryColor: "#f8f9fa"
+
+    darkmode:
+       textColor: "#E0E0E0"
+       secondaryTextColor: "#b0b3b8"
+       textLinkColor: "#ffffff"
+       backgroundColor: "#1A1A1A"
+       secondaryBackgroundColor: "#212529"
+       primaryColor: "#1E90FF"
+       secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Rahman Ahmed" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Rahman."
+    subtitle: "I build software and analyze data"
+    content: "From applications to video games to websites, I enjoy building things and learning new technologies."
+    image: /images/myImage.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "/Resume.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/moustascheman
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/rahman-ahmed-77a06411b
+        - icon: fab fa-itch-io
+          url: https://moustascheman.itch.io/
+      #customIcons:
+       #  url: "https://moustascheman.itch.io/"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/aboutme.jpg"
+    content: |-
+      I am a software developer with a passion for building things including fullstack applications and video games.
+
+      I am currently studying Data Analysis and Artificial Intelligence.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "C#"
+        - "C++"
+        - "JavaScript"
+        - "React"
+        - "Node"
+        - "Express"
+        - "SQL"
+        - "Angular"
+        - "Unity"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - company: "Cognition+"
+        companyUrl: "https://www.gocognition.com/"
+        jobs:
+          - name: "Software Developer Intern"
+            date: "Sep 2019 - August 2022"
+            content: "I worked on both the frontend and backend of [Cognition+'s](https://www.gocognition.com/) flagship insurance software."
+            info:
+              content: Working as a software developer
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-java
+                  url: https://www.java.com/en/
+                  tooltip: Helped to build and maintain the Java backend
+                - icon: fa-brands fa-angular
+                  url: https://angular.dev/
+                  tooltip: Also maintained the Angular frontend
+                  
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor of Science, Honors Specialization in Computer Science"
+        school:
+          name: "University of Western Ontario"
+          url: "https://www.uwo.ca/index.html"
+        date: "2016 - 2022"
+        GPA: "3.6 out of 4.0"
+        content: |-
+          I studied Computer Science and Game Development and built a variety of software projects.
+
+      
+      - title: "Data Analysis and AI"
+        school:
+          name: "Trios College"
+          url: "https://www.trios.com/"
+        date: "2026 - Present"
+        content: |-
+          I am currently studying Data Analysis and AI.
+
+  # projects
+  projects:
+    enable: true
+    #title: "Projects"
+    items:
+      - title: Chat App
+        content: The backend for a Fullstack Chat application
+        badges:
+          - ".NET"
+          - "C#"
+          - "PostgreSQL"
+        image: /images/projects/chatappstockimage.jpg
+        links:
+          - icon: fab fa-github
+            url: https://github.com/moustascheman/ChatAppBackend
+      
+      - title: Dialogue Editor
+        content: "An in-engine, node-based, Dialogue Editor and System for the Unity Game Engine"
+        badges:
+          - "C#"
+          - "Unity"
+        image: /images/projects/dialogueeditor.jpg
+        featured:
+          name: Live Demo
+          link: https://moustascheman.itch.io/dialogue-system-demo
+        links:
+          - icon: fab fa-github
+            url: https://github.com/moustascheman/Dialogue-System-Project
+
+      - title: Knightmare
+        content: "A 2D Platformer built with the Unity Game Engine"
+        image: /images/projects/knightmare.png
+        badges:
+          - "C#"
+          - "Unity"
+        featured:
+          name: Live Demo
+          link: https://moustascheman.itch.io/knightmare
+        links:
+          - icon: fab fa-github
+            url: https://github.com/moustascheman/CS4483Project
+        
+      
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Feel free to send me an email!
+    btnName: Mail me
+    btnLink: mailto:Rahman.Ahmed@triosstudent.com
+
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/moustascheman
+      linkedin: https://www.linkedin.com/in/rahman-ahmed-77a06411b
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: false
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
