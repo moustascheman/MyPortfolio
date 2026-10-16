@@ -1,4 +1,4 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://moustascheman.github.io/MyPortfolio/"
 languageCode: "en-us"
 title: "Rahman Ahmed"
 theme: hugo-profile
@@ -20,9 +20,8 @@ languages:
           url: /blogs
           weight: 1
           
-caches:
-  images:
-    dir: :cacheDir/images
+#caches:
+##   dir: :cacheDir/images
 
 outputs:
   home:
