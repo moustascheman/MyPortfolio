@@ -1,4 +1,4 @@
-baseURL: "https://moustascheman.github.io/MyPortfolio/"
+baseURL: "https://moustascheman.github.io/MyPortfolio"
 languageCode: "en-us"
 title: "Rahman Ahmed"
 theme: hugo-profile
@@ -6,6 +6,10 @@ theme: hugo-profile
 # Multilingual configuration
 defaultContentLanguage: "en"
 defaultContentLanguageInSubdir: false
+
+caches:
+  images:
+    dir: :cacheDir/images
 
 languages:
   en:
@@ -41,6 +45,7 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  
 
 Menus:
   #main:
